@@ -1,4 +1,4 @@
-FROM golang:bullseye
+FROM golang:stretch
 RUN mkdir /go/src/app && apk update && apk add git
 ADD main.go /go/src/app/
 ADD go.mod /go/
